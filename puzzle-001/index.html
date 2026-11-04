@@ -1,1 +1,109 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Butterfly 5577</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #050505;
+            color: white;
+            font-family: Georgia, serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .butterfly {
+            width: 100%;
+            max-width: 650px;
+            display: block;
+            margin: 0 auto 30px;
+        }
+
+        .qr-container {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin: 20px auto 35px;
+        }
+
+        .qr {
+            width:  min(38vw, 220px);
+            height: auto;
+            background: white;
+            padding: 8px;
+        }
+
+        .message {
+            margin-top: 35px;
+            color: #d0d0d0;
+            font-size: clamp(16px, 3vw, 23px);
+            letter-spacing: 1px;
+            font-style: italic;
+        }
+
+        @media (max-width: 450px) {
+            .container {
+                padding: 15px;
+            }
+
+            .qr-container {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <img
+            src="butterfly.jpg"
+            alt="Símbolo da Butterfly 5577"
+            class="butterfly"
+        >
+
+        <div class="qr-container">
+
+            <img
+                src="qr-hex.png"
+                alt="Primeiro código QR"
+                class="qr"
+            >
+
+            <img
+                src="qr-caesar.png"
+                alt="Segundo código QR"
+                class="qr"
+            >
+
+        </div>
+
+        <p class="message">
+            "Os números importam como chaves em um cofre"
+        </p>
+
+    </main>
+
+</body>
+</html>
+
